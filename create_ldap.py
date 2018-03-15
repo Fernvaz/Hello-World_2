@@ -65,4 +65,4 @@ def create_instance(compute, project, zone, name):
     }
 
 
-return compute.instances().insert(project='My-First-Project', zone='us-west1-a', body=config).execute()
+return compute.instances().insert(project='my-first-project', zone='us-west1-a', body=config).execute()
