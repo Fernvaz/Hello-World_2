@@ -7,4 +7,4 @@
 # │ │ │ │ │
 # │ │ │ │ │
 # * * * * *  command to execute
-0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/ec2-user/hello-world/hello-world/automated_webpage.sh           #Executes automated_webpage.sh every five minutes.
+0,5,10,15,20,25,30,35,40,45,50,55 * * * *          #Executes automated_webpage.sh every five minutes.
