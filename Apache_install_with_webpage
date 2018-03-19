@@ -1,0 +1,12 @@
+#!/bin/bash
+sudo su                                                                                     
+yum -y install httpd mod_ssl                                                               
+systemctl enable httpd
+systemctl start httpd
+
+sed -i 's/^/#/g' /etc/httpd/conf.d/welcome.conf                                             
+
+echo -e "<html> \n<h1> Welcome, To my page </h1> \n
+<h2> I had a great time learning. </h2> \n                                                                  
+<h3> I know that I'm late submiting this assignment. </h3> \n
+</html>" > /var/www/html/index.html #Creates a new basic index page with given text.y
